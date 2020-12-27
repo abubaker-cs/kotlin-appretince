@@ -4,7 +4,7 @@ fun main(){
     /*
         Exercises: Ch-10
      */
-    println("Chapter Lambdas")
+    println("Chapter 10: Lambdas")
 
 
 

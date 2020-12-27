@@ -46,15 +46,55 @@ fun main(){
     val isOneLessThanOrEqualsTwo = (1 <= 2)
     println("1 <= 2 : $isOneLessThanOrEqualsTwo")
 
-    // Logic
+    // && And
+    val and = true && true
+    println("Ture && Ture: $and")
+
+    // || OR
+    val or = true or false
+    println("True || False: $or")
+
+    // && ||
+    val andOr = (1 < 2 && 3 > 4) || 1 < 4
+    println("(1 < 2 && 3 > 4) || 1 < 4: $andOr")
 
     // String Equality?
+    val guess = "dog"
+    val dogEqualsCat = guess == "cat"
+    println("dog == cat? $dogEqualsCat")
+
+    val order = "cat" < "dog"
+    print("Oder Cat < Dog: $order")
 
     // >>> Mini Exercises
+
+    // 1
+    val myAge = 16
+    val amIaTeenager = (myAge > 13) && (myAge < 19)
+    println("Am I a teeanger? $amIaTeenager")
+
+    // 2
+    val theirAge = 15
+    val isHeaTeenager = (theirAge > 13) && (theirAge < 19)
+
+    val bothTeenagers = amIaTeenager && isHeaTeenager
+    println("Are we both teenagers? $bothTeenagers")
+
+    // 3
+    val reader = "Abubaker"
+    val author = "Richard"
+    val authorIsReader = reader == author
+    println("Is author and reader same? $authorIsReader")
+
+    // v4
+    val readerBeforeAuthor = reader < author
+    println("Does reader comes before author? $readerBeforeAuthor")
 
     /*
      *****************************************    If
      */
+
+
 
     // Short Circuiting
 

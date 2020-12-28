@@ -101,8 +101,30 @@ fun main(){
     // 4.
 
     /*
-     *****************************************    Func As Variables
+     *****************************************    Func As Variables (Passing Functions to Functions)
      */
+
+    fun add(a:Int, b: Int): Int {
+        return a + b
+    }
+
+    // 1
+    var function = ::add
+    println("4 + 2 = ${function (4,2)}")
+
+    // 2
+    fun subtract(a: Int, b: Int): Int {
+        return a - b
+    }
+    function = ::subtract
+    println("4 - 2 = ${subtract(4, 2)}")
+
+    // 3
+    fun printResult(function: (Int, Int) -> Int, a: Int, b: Int) {
+        val result = function(a,b)
+        print(result)
+    }
+    printResult(::add, 4, 2)
 
     // No Return (Nothing)
 

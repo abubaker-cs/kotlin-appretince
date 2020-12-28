@@ -47,7 +47,19 @@ fun main(){
     println("Product: $product, Quotient: $quotient")
 
 
-    // Parameters as Values
+    // Single line function
+    fun multiplyInferred(number: Int, multiplier: Int) = number * multiplier
+    println("Single Line: ${multiplyInferred(3, 4)}")
+
+
+    // Parameters are constant, they cannot be modified; so it is better to save changes in a new var (variable)
+    // and then return back the newly assigned variable
+    fun incrementAndPrint(value: Int) : Int {
+        val newValue = value + 1
+        println(newValue)
+        return newValue
+    }
+    println("4 + 1 = ${incrementAndPrint(4)}")
 
     // Overloading
 

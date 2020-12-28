@@ -61,9 +61,44 @@ fun main(){
     }
     println("4 + 1 = ${incrementAndPrint(4)}")
 
-    // Overloading
+    // Overloading: Using identical functions with different parameters
+    fun getValue(value: Int): Int {
+        return value + 1
+    }
+
+    fun getValue(value: String) : String {
+        return "The value is $value"
+    }
+
+    println("Value is: ${getValue(2)}")
+    println(getValue("Sixty Nine."))
+
+    // Caution
+
+    fun getVar(value: String): String{
+        return "The value is $value"
+    }
+
+    fun getVar(value: Int): Int {
+        return value
+    }
+
+    println("Value: ${getVar("Hey")}")
+    println("Value: ${getVar(34)}")
 
     // >>> Exercises
+
+    // 1 & 2
+    fun printFullName(firstName: String, lastName: String): String {
+        return "$firstName $lastName"
+    }
+
+    println("Full Name: ${printFullName("Mohammad", "Abubaker")}")
+
+
+    // 3.
+
+    // 4.
 
     /*
      *****************************************    Func As Variables
